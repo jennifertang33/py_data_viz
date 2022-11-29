@@ -5,6 +5,7 @@ from dash import Dash, html, dcc
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
+import numpy as np
 
 app = Dash(__name__)
 
@@ -40,7 +41,7 @@ fig2 = px.pie(df1, values='priceByCond', names='index', title="Accommodation pri
 # graph 2
 colors = ['gold', 'mediumturquoise', 'darkorange', 'lightgreen']
 fig3 = go.Figure(data=[go.Pie(labels=merged["neighbourhood_group_nb"].value_counts().index,
-                             values=merged["neighbourhood_group_nb"].value_counts().values)])
+                              values=merged["neighbourhood_group_nb"].value_counts().values)])
 fig3.update_traces(hoverinfo='label+percent', textfont_size=20,
                   marker=dict(colors=colors, line=dict(color='#000000', width=2)))
 
