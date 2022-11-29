@@ -1,6 +1,6 @@
 # py_data_viz
 
-AirBnb visualization by Dash python 
+AirBnB visualization by Dash Python 
 
 Hong Kong data from: http://insideairbnb.com/get-the-data/
 
